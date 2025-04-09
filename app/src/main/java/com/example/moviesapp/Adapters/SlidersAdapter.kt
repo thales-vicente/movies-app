@@ -1,8 +1,11 @@
 package com.example.moviesapp.Adapters
 
 import android.view.LayoutInflater
+import android.view.RoundedCorner
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.load.resource.bitmap.CenterCrop
+import com.bumptech.glide.load.resource.bitmap.RoundedCorners
 import com.bumptech.glide.request.RequestOptions
 import com.example.moviesapp.Domian.SlidersItems
 import com.example.moviesapp.databinding.SlideItemContainerBinding
@@ -14,7 +17,8 @@ class SlidersAdapter() : RecyclerView.Adapter<SlidersAdapter.SliderViewHolder>()
     }
 
     fun setImage(slidersItems: SlidersItems) {
-        RequestOptions = RequestOptions()
+        val requestOptions = RequestOptions()
+        requestOptions.transforms(CenterCrop(), RoundedCorners(60))
     }
 
 
