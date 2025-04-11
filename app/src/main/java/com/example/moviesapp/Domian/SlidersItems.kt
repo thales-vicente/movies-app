@@ -1,13 +1,15 @@
 package com.example.moviesapp.Domian
 
-import android.media.Image
-
-class SlidersItems {
-    val image: Int
-        get() {
-            return image
-        }
-    fun setImage(image: Int){
-        this.image
+class SlidersItems(
+    var image: Int
+) {
+    fun getImage(): Int {
+        return image
+    }
+    fun sliderItems(){
+        this.image = image
+    }
+    fun setImage(){
+        this.image = image
     }
 }
