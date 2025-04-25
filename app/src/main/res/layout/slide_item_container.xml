@@ -5,6 +5,8 @@
     android:layout_height="match_parent"
     android:minHeight="300dp"
     android:scaleType="centerCrop"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:src="@drawable/intro_pic"
     android:adjustViewBounds="false">
 
 </ImageView>
