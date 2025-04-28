@@ -22,9 +22,18 @@
                 android:id="@+id/iv_filmDetail"
                 android:layout_width="match_parent"
                 android:layout_height="400dp"
+                android:scaleType="centerCrop"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"/>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:background="@drawable/gradient_background"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_filmDetail"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -136,7 +145,7 @@
                 app:layout_constraintStart_toStartOf="parent"/>
 
             <TextView
-                android:id="@+id/tv_test"
+                android:id="@+id/tv_summaryDescription"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -154,7 +163,7 @@
                 android:textColor="@color/yellow"
                 android:textSize="16sp"
                 app:layout_constraintStart_toStartOf="@id/tv_summary"
-                app:layout_constraintTop_toBottomOf="@id/tv_test"/>
+                app:layout_constraintTop_toBottomOf="@id/tv_summaryDescription"/>
 
             <TextView
                 android:id="@+id/tv_actorInfo"

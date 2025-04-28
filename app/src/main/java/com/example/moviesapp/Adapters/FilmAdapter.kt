@@ -45,6 +45,7 @@ class FilmAdapter(private val items: Root): RecyclerView.Adapter<FilmAdapter.Vie
 
             binding.root.setOnClickListener {
                 val intent = Intent(binding.root.context, DetailActivity::class.java)
+                intent.putExtra("id", item.id.toInt())
                 binding.root.context.startActivity(intent)
             }
         }
